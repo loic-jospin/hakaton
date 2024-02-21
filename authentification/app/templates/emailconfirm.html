@@ -1,0 +1,7 @@
+{% autoescape off %}
+bienvenue chez loic developpeur
+bonjour {{ name }}
+Confirmez votre address email en cliquant sur ce lien suivant.
+
+Lien: https//{{domain}}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}
